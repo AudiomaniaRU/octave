@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initGallery();
   initStickyHeader();
   initCatalogFilter();
+  initOverviewToggles();
 });
 
 /* ============================================================
@@ -153,6 +154,20 @@ function initStickyHeader() {
       ticking = true;
     }
   }, { passive: true });
+}
+
+/* ============================================================
+   OVERVIEW ACCORDION (homepage)
+   ============================================================ */
+function initOverviewToggles() {
+  document.querySelectorAll('.overview-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const category = btn.closest('.overview-category');
+      const isOpen = category.classList.contains('is-open');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      category.classList.toggle('is-open', !isOpen);
+    });
+  });
 }
 
 /* ============================================================

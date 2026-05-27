@@ -247,121 +247,348 @@
       </article>
 
       <!-- ========================================================
-           PRODUCT OVERVIEW (categories) — белый фон
+           ПРОДУКЦИЯ — аккордеон по категориям
            ======================================================== -->
-      <section class="overview-section section" id="products" aria-labelledby="overview-heading">
-        <div class="container">
-          <header class="section-header">
-            <span class="section-eyebrow">Каталог продуктов</span>
-            <h2 class="section-title" id="overview-heading">Обзор продукции</h2>
-          </header>
+      <section class="overview-section" id="products" aria-labelledby="overview-heading">
 
-          <div class="overview-grid">
+        <header class="overview-section-header">
+          <div class="container">
+            <span class="section-eyebrow">Каталог</span>
+            <h2 class="section-title" id="overview-heading">Продукция</h2>
+          </div>
+        </header>
 
-            <!-- Jubilee Line -->
-            <a href="products/index.html#jubilee" class="category-card">
-              <span class="category-new-badge">NEU</span>
-              <div class="category-card-img">
-                <img src="images/jubilee-line-silver_small2.jpg" alt="Линия Jubilee" width="260" height="120" loading="lazy">
+        <!-- 1. Линия Jubilee -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <span class="category-new-badge">NEU</span>
+                  <h3 class="overview-cat-title">Линия Jubilee</h3>
+                  <p class="overview-cat-desc">Флагманская серия, воплощающая полвека опыта Octave. Бескомпромиссное звучание, эстетика и инженерное искусство без ограничений бюджета.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-jubilee">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/jubilee-line-silver_small2.jpg" alt="Линия Jubilee" loading="lazy">
+                </div>
               </div>
-              <span class="category-label">Флагманская серия</span>
-              <strong class="category-name">Линия Jubilee</strong>
-              <p class="category-desc">Бескомпромиссное звучание, эстетика и технологии.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="#" class="category-model-link">Jubilee 300B</a>
-                <a href="#" class="category-model-link">Jubilee Class A</a>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-jubilee">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/jubpre_se_alnat_small.png" alt="Jubilee Preamp SE" loading="lazy">
+                  <span class="overview-model-name">Jubilee Preamp SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/jub300b_silver_frontal_small.png" alt="Jubilee 300B" loading="lazy">
+                  <span class="overview-model-name">Jubilee 300B</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/jubclassa_silver_frontal_small2.png" alt="Jubilee Class A" loading="lazy">
+                  <span class="overview-model-new">NEU</span>
+                  <span class="overview-model-name">Jubilee Class A</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/jubilee_mono_ultimate_silver_small.png" alt="Jubilee Mono Ultimate" loading="lazy">
+                  <span class="overview-model-name">Jubilee Mono Ultimate</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
               </div>
-            </a>
-
-            <!-- Preamplifiers -->
-            <a href="products/index.html#preamplifiers" class="category-card">
-              <div class="category-card-img">
-                <img src="images/h7se3.png" alt="Предусилители Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Предусилители</span>
-              <strong class="category-name">Предусилители</strong>
-              <p class="category-desc">Более 35 лет мы устанавливаем стандарты в этом классе.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="products/hp-700-se.html" class="category-model-link">HP 700 SE</a>
-                <a href="#" class="category-model-link">HP 500</a>
-                <a href="#" class="category-model-link">H 200</a>
-              </div>
-            </a>
-
-            <!-- Power Amplifiers -->
-            <a href="products/index.html#power" class="category-card">
-              <div class="category-card-img">
-                <img src="images/mre220sealn2.png" alt="Усилители мощности Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Усилители мощности</span>
-              <strong class="category-name">Усилители мощности</strong>
-              <p class="category-desc">Монофонические и стереоусилители высочайшего класса.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="products/mre-220-se.html" class="category-model-link">MRE 220 SE</a>
-                <a href="#" class="category-model-link">RE 320</a>
-              </div>
-            </a>
-
-            <!-- Integrated -->
-            <a href="products/index.html#integrated" class="category-card">
-              <div class="category-card-img">
-                <img src="images/v80se_silver_frontal6.png" alt="Интегральные усилители Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Интегральные усилители</span>
-              <strong class="category-name">Интегральные усилители</strong>
-              <p class="category-desc">Компактные, элегантные, многофункциональные.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="products/v-80-se.html" class="category-model-link">V 80 SE</a>
-                <a href="products/v-70-ca.html" class="category-model-link">V 70 Class A</a>
-                <a href="#" class="category-model-link">V 40</a>
-              </div>
-            </a>
-
-            <!-- Single-Ended -->
-            <a href="products/index.html#single-ended" class="category-card">
-              <div class="category-card-img">
-                <img src="images/v16-si-fr3.png" alt="Однотактные усилители Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Однотактные усилители</span>
-              <strong class="category-name">Single-Ended</strong>
-              <p class="category-desc">Чистота однотактного усиления в лучшем виде.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="#" class="category-model-link">V 16</a>
-                <a href="#" class="category-model-link">RE 290 SE</a>
-              </div>
-            </a>
-
-            <!-- Phono -->
-            <a href="products/index.html#phono" class="category-card">
-              <div class="category-card-img">
-                <img src="images/phomoaln1.png" alt="Фонокорректоры Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Фонокорректоры</span>
-              <strong class="category-name">Фонокорректоры</strong>
-              <p class="category-desc">Для тех, кто ценит музыку с аналогового носителя.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="#" class="category-model-link">Phono Module MC</a>
-                <a href="#" class="category-model-link">Phono Equalizer</a>
-              </div>
-            </a>
-
-            <!-- Additional -->
-            <a href="products/index.html#additional" class="category-card">
-              <div class="category-card-img">
-                <img src="images/sbb.png" alt="Дополнительные устройства Octave" width="260" height="120" loading="lazy">
-              </div>
-              <span class="category-label">Дополнительные устройства</span>
-              <strong class="category-name">Дополнительные устройства</strong>
-              <p class="category-desc">Super Black Box, Black Box, фильтры и модули.</p>
-              <div class="category-model-list" aria-label="Модели">
-                <a href="#" class="category-model-link">Super Black Box</a>
-                <a href="#" class="category-model-link">Black Box</a>
-                <a href="#" class="category-model-link">Tube Bias Unit</a>
-              </div>
-            </a>
-
+            </div>
           </div>
         </div>
+
+        <!-- 2. Предусилители -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Предусилители</h3>
+                  <p class="overview-cat-desc">Более 35 лет мы устанавливаем стандарты в этом классе. HP 500 (с 1988) и HP 200 (с 1992) были для своего времени референсными и стали культовыми.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-preamplifiers">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/h7se3.png" alt="Предусилители Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-preamplifiers">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/jubpre_alnat2.png" alt="Jubilee Preamp SE" loading="lazy">
+                  <span class="overview-model-name">Jubilee Preamp SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="products/hp-700-se.html" class="overview-model-card">
+                  <img src="images/hp700se_silver_frontal_small8.png" alt="HP 700 SE" loading="lazy">
+                  <span class="overview-model-new">NEU</span>
+                  <span class="overview-model-name">HP 700 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/h7se3.png" alt="HP 500" loading="lazy">
+                  <span class="overview-model-name">HP 500</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/h3aln2.png" alt="H 300" loading="lazy">
+                  <span class="overview-model-name">H 300</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Усилители мощности -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Усилители мощности</h3>
+                  <p class="overview-cat-desc">Монофонические и стереофонические усилители высочайшего класса. Непоколебимая мощь, управляемая деликатностью ламповой техники.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-power">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/mre220se_frontal_silver_small1.png" alt="Усилители мощности Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-power">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="products/mre-220-se.html" class="overview-model-card">
+                  <img src="images/mre220se_frontal_silver_small1.png" alt="MRE 220 SE" loading="lazy">
+                  <span class="overview-model-new">NEU</span>
+                  <span class="overview-model-name">MRE 220 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/re320_alnat.png" alt="RE 320" loading="lazy">
+                  <span class="overview-model-name">RE 320</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Интегральные усилители -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Интегральные усилители</h3>
+                  <p class="overview-cat-desc">Компактные, элегантные, многофункциональные. Весь Hi-End в одном корпусе — с поддержкой различных типов ламп и широкими возможностями для апгрейда.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-integrated">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/v80se_silver_frontal6.png" alt="Интегральные усилители Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-integrated">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/v110se_alnat1.png" alt="V 110 SE" loading="lazy">
+                  <span class="overview-model-name">V 110 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="products/v-80-se.html" class="overview-model-card">
+                  <img src="images/v80se_silver_frontal6.png" alt="V 80 SE" loading="lazy">
+                  <span class="overview-model-name">V 80 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/v70se_silver_frontal_small2.png" alt="V 70 SE" loading="lazy">
+                  <span class="overview-model-name">V 70 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="products/v-70-ca.html" class="overview-model-card">
+                  <img src="images/v70ca-black-frontal_small.png" alt="V 70 Class A" loading="lazy">
+                  <span class="overview-model-name">V 70 Class A</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/v40se_silver_frontal_small.png" alt="V 40 SE" loading="lazy">
+                  <span class="overview-model-name">V 40 SE</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Однотактные усилители -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Однотактные усилители</h3>
+                  <p class="overview-cat-desc">Чистота однотактного усиления в лучшем виде. Мягкость и теплота звучания, недостижимые иными методами усиления.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-single">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/v16-si-fr3.png" alt="Однотактные усилители Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-single">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/v16-si-fr3.png" alt="V 16" loading="lazy">
+                  <span class="overview-model-name">V 16</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Фонокорректоры -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Фонокорректоры</h3>
+                  <p class="overview-cat-desc">Для тех, кто ценит музыку с аналогового носителя. Точность коррекции и низкий уровень шумов — основа референсного воспроизведения винила.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-phono">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/phomoaln1.png" alt="Фонокорректоры Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-phono">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/phono_module_silver_frontal_small2.png" alt="Phono Module MC" loading="lazy">
+                  <span class="overview-model-name">Phono Module MC</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/phono_eq_2_frontal_small.png" alt="Phono Equalizer" loading="lazy">
+                  <span class="overview-model-name">Phono Equalizer</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Дополнительные устройства -->
+        <div class="overview-category">
+          <div class="overview-cat-header">
+            <div class="container">
+              <div class="overview-cat-layout">
+                <div class="overview-cat-info">
+                  <h3 class="overview-cat-title">Дополнительные устройства</h3>
+                  <p class="overview-cat-desc">Super Black Box, Black Box, фильтры и модули. Расширяйте возможности вашей системы Octave с помощью фирменных аксессуаров.</p>
+                  <button class="overview-toggle" aria-expanded="false" aria-controls="models-additional">
+                    <svg class="plus-minus" viewBox="0 0 45 45" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="circle" cx="22.5" cy="22.5" r="21"/>
+                      <line class="stroke-symbol" x1="33.61" y1="22.5" x2="11.39" y2="22.5"/>
+                      <line class="stroke-symbol" x1="22.5" y1="11.39" x2="22.5" y2="33.61"/>
+                    </svg>
+                    <span class="overview-toggle-label">Модельный ряд</span>
+                  </button>
+                </div>
+                <div class="overview-cat-image">
+                  <img src="images/sbb.png" alt="Дополнительные устройства Octave" loading="lazy">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="overview-cat-models" id="models-additional">
+            <div class="container">
+              <div class="overview-models-grid">
+                <a href="#" class="overview-model-card">
+                  <img src="images/sbb.png" alt="Super Black Box" loading="lazy">
+                  <span class="overview-model-name">Super Black Box</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/bb.png" alt="Black Box" loading="lazy">
+                  <span class="overview-model-name">Black Box</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/bbp2.png" alt="Black Box Phono" loading="lazy">
+                  <span class="overview-model-name">Black Box Phono</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+                <a href="#" class="overview-model-card">
+                  <img src="images/filter3_small.png" alt="Filter" loading="lazy">
+                  <span class="overview-model-name">Filter</span>
+                  <span class="overview-model-arrow">›</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
 
       <!-- ========================================================
