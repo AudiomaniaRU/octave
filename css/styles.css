@@ -139,19 +139,25 @@
   }
 
   .nav-logo {
-    font-family: var(--f-serif);
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: var(--c-accent);
-    letter-spacing: 0.1em;
+    order: 99;
+    margin-inline-start: auto;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+    object-fit: contain;
   }
 
   .nav-primary {
-    display: none;
+    display: flex;
     align-items: center;
     gap: var(--sp-6);
-    margin-inline-start: auto;
+    margin-inline-start: 0;
   }
 
   .nav-item {
@@ -159,10 +165,10 @@
   }
 
   .nav-link {
-    font-size: 0.6875rem;
-    letter-spacing: 0.08em;
+    font-size: 0.875rem;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--c-text-2);
+    color: #ffffff;
     padding-block: var(--sp-5);
     transition: color var(--dur-normal) var(--ease);
     display: flex;
@@ -175,7 +181,7 @@
   .nav-link:hover,
   .nav-item:hover > .nav-link,
   .nav-item:focus-within > .nav-link {
-    color: var(--c-text);
+    color: rgba(255, 255, 255, 0.75);
   }
 
   .nav-arrow {
@@ -230,28 +236,32 @@
 
   /* Social icons in header */
   .header-socials {
-    display: none;
+    display: flex;
+    order: 98;
     align-items: center;
-    gap: var(--sp-3);
-    margin-inline-start: var(--sp-3);
+    gap: var(--sp-2);
     flex-shrink: 0;
   }
 
   .header-social-link {
-    color: var(--c-text-3);
+    color: #ffffff;
+    border: 1px solid #ffffff;
     display: flex;
     align-items: center;
-    transition: color var(--dur-fast);
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: opacity var(--dur-fast);
   }
 
-  .header-social-link:hover { color: var(--c-text-2); }
+  .header-social-link:hover { opacity: 0.7; }
 
   /* Header extras */
   .header-extras {
-    display: none;
+    display: flex;
+    order: 97;
     align-items: center;
     gap: var(--sp-3);
-    margin-inline-start: var(--sp-4);
     flex-shrink: 0;
   }
 
@@ -278,7 +288,7 @@
 
   /* Hamburger */
   .nav-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 5px;
     background: none;
