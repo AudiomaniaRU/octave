@@ -1,0 +1,129 @@
+media: "images"
+
+content:
+  - name: homepage
+    label: Главная страница
+    type: file
+    path: content/homepage.json
+    fields:
+      - name: hero_slides
+        label: Слайды Hero
+        type: list
+        itemLabel: "{fields.title}"
+        fields:
+          - { name: title,      label: Заголовок,       type: string }
+          - { name: subtitle,   label: Подзаголовок,    type: string }
+          - { name: eyebrow,    label: Надпись сверху,  type: string }
+          - { name: image,      label: Фоновое фото,    type: image }
+          - { name: link,       label: Ссылка кнопки,   type: string }
+          - { name: link_text,  label: Текст кнопки,    type: string }
+      - name: featured
+        label: Избранные продукты (главная)
+        type: list
+        itemLabel: "{fields.name}"
+        fields:
+          - { name: name,       label: Название,        type: string }
+          - { name: eyebrow,    label: Метка категории, type: string }
+          - { name: image,      label: Фото,            type: image }
+          - { name: description,label: Описание,        type: text }
+          - { name: link,       label: Ссылка,          type: string }
+          - { name: reverse,    label: Изображение справа, type: boolean }
+      - name: news_items
+        label: Новости (главная, 3 шт.)
+        type: list
+        itemLabel: "{fields.title}"
+        fields:
+          - { name: date,       label: Дата (ГГГГ-ММ-ДД), type: date }
+          - { name: title,      label: Заголовок,       type: string }
+          - { name: excerpt,    label: Анонс,           type: text }
+          - { name: image,      label: Фото,            type: image }
+          - { name: link,       label: Ссылка,          type: string }
+
+  - name: about
+    label: О нас — Философия
+    type: file
+    path: content/about.json
+    fields:
+      - { name: hero_image,   label: Hero-фото,       type: image }
+      - { name: lead_text,    label: Вводная цитата,  type: text }
+      - name: philosophy_blocks
+        label: Блоки философии
+        type: list
+        itemLabel: "{fields.title}"
+        fields:
+          - { name: title,    label: Заголовок,       type: string }
+          - { name: text,     label: Текст (HTML),    type: rich-text }
+      - { name: author_quote, label: Цитата Хофманна, type: text }
+      - { name: author_image, label: Фото Хофманна,   type: image }
+      - name: history
+        label: Хронология
+        type: list
+        itemLabel: "{fields.year}"
+        fields:
+          - { name: year,     label: Год,             type: string }
+          - { name: text,     label: Описание,        type: text }
+
+  - name: products
+    label: Продукты
+    type: collection
+    path: content/products
+    filename: "{fields.slug}.json"
+    view:
+      fields: [name, category, is_new]
+    fields:
+      - { name: name,         label: Название,        type: string, required: true }
+      - { name: slug,         label: Slug (URL),      type: string, required: true }
+      - name: category
+        label: Категория
+        type: select
+        options:
+          - { label: "Линия Jubilee",              value: jubilee }
+          - { label: "Предусилитель",              value: preamplifier }
+          - { label: "Усилитель мощности",         value: power-amplifier }
+          - { label: "Интегральный усилитель",     value: integrated }
+          - { label: "Однотактный усилитель",      value: single-ended }
+          - { label: "Фонокорректор",              value: phono }
+          - { label: "Дополнительное устройство",  value: additional }
+      - { name: is_new,       label: Новинка (NEW),   type: boolean }
+      - { name: subtitle,     label: Подзаголовок,   type: string }
+      - { name: description,  label: Описание (HTML), type: rich-text }
+      - name: hero_image
+        label: Главное фото
+        type: image
+      - name: gallery
+        label: Галерея (порядок — слева направо)
+        type: list
+        fields:
+          - { name: image,    label: Фото,            type: image }
+          - { name: alt,      label: Alt-текст,       type: string }
+      - name: specs
+        label: Характеристики
+        type: object
+        fields:
+          - name: general
+            label: Общие сведения
+            type: list
+            fields:
+              - { name: label, label: Параметр, type: string }
+              - { name: value, label: Значение, type: string }
+          - name: features
+            label: Функции и входы
+            type: list
+            fields:
+              - { name: label, label: Параметр, type: string }
+              - { name: value, label: Значение, type: string }
+          - name: physical
+            label: Габариты и питание
+            type: list
+            fields:
+              - { name: label, label: Параметр, type: string }
+              - { name: value, label: Значение, type: string }
+      - name: options
+        label: Опции и расширения
+        type: list
+        itemLabel: "{fields.title}"
+        fields:
+          - { name: title,    label: Название,        type: string }
+          - { name: image,    label: Фото,            type: image }
+          - { name: text,     label: Описание,        type: text }
+          - { name: link,     label: Ссылка,          type: string }

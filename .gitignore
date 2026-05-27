@@ -1,0 +1,13 @@
+# Исходные данные и спецификации — не публикуются
+/specs/
+/octave_content/
+
+# OS и редакторы
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Временные файлы
+*.tmp
+*.log

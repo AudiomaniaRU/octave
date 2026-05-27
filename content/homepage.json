@@ -1,0 +1,77 @@
+{
+  "hero_slides": [
+    {
+      "title":     "MRE 220 SE",
+      "subtitle":  "Стереомонофонический усилитель мощности. Непоколебимость силы, гибкость вкуса.",
+      "eyebrow":   "Совершенство в каждой детали",
+      "image":     "images/octave_mre_220_mood_klein.jpg",
+      "link":      "products/mre-220-se.html",
+      "link_text": "Подробнее"
+    },
+    {
+      "title":     "HP 700 SE",
+      "subtitle":  "Предусилитель нового поколения. Референсное качество звука.",
+      "eyebrow":   "Совершенство в каждой детали",
+      "image":     "images/keyvisualhp700_bearb.png",
+      "link":      "products/hp-700-se.html",
+      "link_text": "Подробнее"
+    },
+    {
+      "title":     "V 70 Class A",
+      "subtitle":  "Класс A в совершенной форме. Чистота без компромиссов.",
+      "eyebrow":   "Совершенство в каждой детали",
+      "image":     "images/v70ca_black_diag.jpg",
+      "link":      "products/v-70-ca.html",
+      "link_text": "Подробнее"
+    }
+  ],
+  "featured": [
+    {
+      "name":        "MRE 220 SE",
+      "eyebrow":     "Усилитель мощности · Новинка",
+      "image":       "images/octave_mre_220_mood_klein.jpg",
+      "description": "Стереомонофонический усилитель мощности MRE 220 SE задаёт новые стандарты в мире ламповых высококлассных устройств. Сочетание несравненной стабильности и удивительной гибкости в работе с любыми акустическими системами.",
+      "link":        "products/mre-220-se.html",
+      "reverse":     false
+    },
+    {
+      "name":        "HP 700 SE",
+      "eyebrow":     "Предусилитель · Линия Jubilee",
+      "image":       "images/keyvisualhp700_bearb.png",
+      "description": "HP 700 SE — воплощение предусилителя мечты. Максимальная музыкальность, безупречная конструкция и гибкость конфигурации. Балансный вход, встроенный фонокорректор — всё под одной крышей.",
+      "link":        "products/hp-700-se.html",
+      "reverse":     true
+    },
+    {
+      "name":        "V 70 Class A",
+      "eyebrow":     "Интегральный усилитель",
+      "image":       "images/v70ca_black_diag.jpg",
+      "description": "V 70 Class A — это решимость работать только в классе A, где каждый транзактор вносит в звучание свою неповторимую теплоту. Этот усилитель создан для тех, кто не идёт на компромисс с музыкой.",
+      "link":        "products/v-70-ca.html",
+      "reverse":     false
+    }
+  ],
+  "news_items": [
+    {
+      "date":    "2026-05-22",
+      "title":   "Jubilee Class A в Алмасоре",
+      "excerpt": "Octave Audio принял участие в демонстрации у испанского партнёра Audio Pasión. Jubilee Class A покорил аудиторию.",
+      "image":   "images/octave-_audio_pasion_-_jubilee_class_a_2_website.png",
+      "link":    "#"
+    },
+    {
+      "date":    "2026-04-29",
+      "title":   "Octave и TAD Reference One",
+      "excerpt": "Уникальная демонстрация совместимости флагманских усилителей Octave с референсными акустическими системами TAD.",
+      "image":   "images/octave_-_tad_demo_1_news.png",
+      "link":    "#"
+    },
+    {
+      "date":    "2026-04-10",
+      "title":   "Jubilee Class A — официальный старт продаж",
+      "excerpt": "Новый флагманский усилитель линии Jubilee теперь доступен через авторизованных дилеров по всему миру.",
+      "image":   "images/jubclassa_silver_frontal_small2.png",
+      "link":    "#"
+    }
+  ]
+}
