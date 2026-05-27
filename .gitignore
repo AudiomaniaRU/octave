@@ -1,6 +1,7 @@
 # Исходные данные и спецификации — не публикуются
 /specs/
 /octave_content/
+/design_diff.md
 
 # OS и редакторы
 .DS_Store

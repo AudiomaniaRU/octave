@@ -114,11 +114,18 @@
     inset-block-start: 0;
     inset-inline: 0;
     height: var(--header-h);
-    background: var(--c-surface);
-    border-bottom: 1px solid var(--c-border);
+    background: rgba(26, 26, 26, 0.75);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(45, 45, 45, 0.5);
     z-index: var(--z-header);
     display: flex;
     align-items: center;
+    transition: background var(--dur-normal) var(--ease);
+  }
+
+  .site-header.is-scrolled {
+    background: rgba(26, 26, 26, 0.97);
   }
 
   .header-inner {
@@ -220,6 +227,24 @@
     color: var(--c-text);
     background: var(--c-surface-2);
   }
+
+  /* Social icons in header */
+  .header-socials {
+    display: none;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-inline-start: var(--sp-3);
+    flex-shrink: 0;
+  }
+
+  .header-social-link {
+    color: var(--c-text-3);
+    display: flex;
+    align-items: center;
+    transition: color var(--dur-fast);
+  }
+
+  .header-social-link:hover { color: var(--c-text-2); }
 
   /* Header extras */
   .header-extras {
@@ -390,9 +415,8 @@
     position: relative;
     height: 100svh;
     min-height: 520px;
-    max-height: 800px;
     overflow: hidden;
-    margin-block-start: var(--header-h);
+    margin-block-start: 0;
   }
 
   .hero-slide {
@@ -495,7 +519,7 @@
      ============================================================ */
 
   .page-hero {
-    margin-block-start: var(--header-h);
+    margin-block-start: 0;
     position: relative;
     height: clamp(220px, 35vw, 420px);
     overflow: hidden;
@@ -629,6 +653,22 @@
   }
 
   /* ============================================================
+     THEME LIGHT — overrides for warm-white sections
+     ============================================================ */
+
+  .theme-light {
+    --c-bg:       #f5f2ed;
+    --c-surface:  #ffffff;
+    --c-surface-2:#eeebe6;
+    --c-border:   #d5d0ca;
+    --c-text:     #111111;
+    --c-text-2:   #444444;
+    --c-text-3:   #666666;
+    background: var(--c-bg);
+    color: var(--c-text);
+  }
+
+  /* ============================================================
      PRODUCT OVERVIEW GRID (categories)
      ============================================================ */
 
@@ -703,6 +743,24 @@
     color: var(--c-text-3);
     line-height: 1.6;
   }
+
+  .category-model-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-1) var(--sp-3);
+    margin-top: var(--sp-1);
+  }
+
+  .category-model-link {
+    font-family: var(--f-mono);
+    font-size: 0.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--c-accent);
+    transition: color var(--dur-fast);
+  }
+
+  .category-model-link:hover { color: var(--c-text-2); }
 
   .category-new-badge {
     position: absolute;
@@ -1486,8 +1544,10 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .featured-block.reverse .featured-image-wrap { order: 2; }
-  .featured-block.reverse .featured-body { order: 1; }
+  .featured-block.reverse .featured-image-wrap { grid-column: 2; grid-row: 1; }
+  .featured-block.reverse .featured-body { grid-column: 1; grid-row: 1; }
+
+  .header-socials { display: flex; }
 
   .featured-image-wrap { aspect-ratio: auto; }
 
