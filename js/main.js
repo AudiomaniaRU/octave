@@ -108,33 +108,40 @@ function initHeroSlider() {
    PRODUCT GALLERY
    ============================================================ */
 function initGallery() {
-  const main   = document.querySelector('.gallery-main img');
-  const thumbs = document.querySelectorAll('.gallery-thumb');
+  const main     = document.querySelector('.gallery-main img');
+  const thumbs   = document.querySelectorAll('.gallery-thumb');
+  const navItems = document.querySelectorAll('.gallery-nav .nav-item');
   if (!main || !thumbs.length) return;
 
-  function activate(thumb) {
+  function activate(index) {
     thumbs.forEach(t => t.classList.remove('is-active'));
-    thumb.classList.add('is-active');
+    navItems.forEach(n => n.classList.remove('tns-nav-active'));
+    thumbs[index]?.classList.add('is-active');
+    navItems[index]?.classList.add('tns-nav-active');
 
     main.classList.add('is-fading');
     setTimeout(() => {
+      const thumb = thumbs[index];
       main.src = thumb.dataset.full || thumb.querySelector('img').src;
       main.alt = thumb.querySelector('img').alt;
       main.classList.remove('is-fading');
     }, 200);
   }
 
-  thumbs.forEach(thumb => {
-    thumb.addEventListener('click', () => activate(thumb));
+  thumbs.forEach((thumb, i) => {
+    thumb.addEventListener('click', () => activate(i));
     thumb.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(thumb); }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(i); }
     });
     thumb.setAttribute('role', 'button');
     thumb.setAttribute('tabindex', '0');
   });
 
-  // Activate first
-  if (thumbs[0]) thumbs[0].classList.add('is-active');
+  navItems.forEach((navItem, i) => {
+    navItem.addEventListener('click', () => activate(i));
+  });
+
+  activate(0);
 }
 
 /* ============================================================

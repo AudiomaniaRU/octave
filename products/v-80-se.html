@@ -94,10 +94,10 @@
     </div>
   </nav>
 
-  <main id="main-content">
+  <main id="main-content" class="theme-light">
 
     <!-- PRODUCT INTRO + BREADCRUMB -->
-    <div style="margin-top: var(--header-h); border-bottom: 1px solid var(--c-border);">
+    <div style="background: #ffffff; margin-top: var(--header-h); border-bottom: 1px solid var(--c-border);">
       <div class="container product-intro">
 
         <!-- Breadcrumb -->
@@ -128,15 +128,27 @@
     </div>
 
     <!-- GALLERY -->
+    <div style="background: #f5f2ed;">
     <div class="container">
       <div class="gallery" aria-label="Галерея изображений V 80 SE">
 
-        <div class="gallery-main" role="img" aria-label="Основное изображение продукта">
-          <img
-            src="../images/v80se_silver_diag.jpg"
-            alt="Octave V 80 SE — серебристый, диагональный вид"
-            width="1200" height="675"
-          >
+        <div class="gallery-main-wrap">
+          <div class="gallery-main" role="img" aria-label="Основное изображение продукта">
+            <img
+              src="../images/v80se_silver_diag.jpg"
+              alt="Octave V 80 SE — серебристый, диагональный вид"
+              width="1200" height="675"
+            >
+          </div>
+          <div class="gallery-nav" aria-label="Carousel Pagination">
+            <div class="nav-item tns-nav-active" data-nav="0" aria-label="Carousel Page 1 (Current Slide)" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="1" tabindex="-1" aria-label="Carousel Page 2" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="2" tabindex="-1" aria-label="Carousel Page 3" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="3" tabindex="-1" aria-label="Carousel Page 4" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="4" tabindex="-1" aria-label="Carousel Page 5" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="5" tabindex="-1" aria-label="Carousel Page 6" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+            <div class="nav-item" data-nav="6" tabindex="-1" aria-label="Carousel Page 7" aria-controls="gallery-main"><div class="selection-bar"></div></div>
+          </div>
         </div>
 
         <div class="gallery-thumbs" role="list" aria-label="Миниатюры изображений">
@@ -165,11 +177,12 @@
 
       </div>
     </div>
+    </div><!-- /gallery bg -->
 
     <!-- ========================================================
          DESCRIPTION
          ======================================================== -->
-    <section id="description" class="product-section" style="scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="desc-heading">
+    <section id="description" class="product-section" style="background: #ffffff; scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="desc-heading">
       <div class="container">
         <p class="product-section-title" id="desc-heading">Описание</p>
         <div class="product-description">
@@ -192,7 +205,7 @@
     <!-- ========================================================
          SPECIFICATIONS
          ======================================================== -->
-    <section id="specs" class="product-section" style="scroll-margin-top: calc(var(--header-h) + 1rem); background: var(--c-surface);" aria-labelledby="specs-heading">
+    <section id="specs" class="product-section" style="background: #f5f2ed; scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="specs-heading">
       <div class="container">
         <p class="product-section-title" id="specs-heading">Технические характеристики</p>
 
@@ -220,7 +233,16 @@
               </div>
               <div class="spec-row">
                 <span class="spec-label">Варианты отделки</span>
-                <span class="spec-value">Серебристый / Чёрный</span>
+                <span class="spec-value">
+                  <span class="color-swatches">
+                    <span class="color-swatch-item">
+                      <span class="color-swatch" style="background: #bebebe;"></span>Серебристый
+                    </span>
+                    <span class="color-swatch-item">
+                      <span class="color-swatch" style="background: #222222;"></span>Чёрный
+                    </span>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
@@ -286,7 +308,7 @@
     <!-- ========================================================
          OPTIONS
          ======================================================== -->
-    <section id="options" class="product-section" style="scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="options-heading">
+    <section id="options" class="product-section" style="background: #ffffff; scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="options-heading">
       <div class="container">
         <p class="product-section-title" id="options-heading">Опции и расширения</p>
 
@@ -350,7 +372,7 @@
     <!-- ========================================================
          REVIEWS
          ======================================================== -->
-    <section id="reviews" class="product-section" style="scroll-margin-top: calc(var(--header-h) + 1rem); background: var(--c-surface);" aria-labelledby="reviews-heading">
+    <section id="reviews" class="product-section" style="background: #f5f2ed; scroll-margin-top: calc(var(--header-h) + 1rem);" aria-labelledby="reviews-heading">
       <div class="container">
         <p class="product-section-title" id="reviews-heading">Обзоры в прессе</p>
 
@@ -385,7 +407,7 @@
     </section>
 
     <!-- CTA: find dealer -->
-    <div style="padding: var(--sp-16) var(--pad-x); background: var(--c-bg); text-align: center; border-top: 1px solid var(--c-border);">
+    <div style="padding: var(--sp-16) var(--pad-x); background: #ffffff; text-align: center; border-top: 1px solid var(--c-border);">
       <div class="container">
         <span style="display:block; font-family: var(--f-mono); font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--c-accent); margin-bottom: var(--sp-5);">Octave продаётся только через авторизованных дилеров</span>
         <h2 style="font-family: var(--f-serif); font-size: clamp(1.25rem, 2.5vw, 1.875rem); color: var(--c-text); margin-bottom: var(--sp-8);">Найдите ближайшего дилера</h2>
